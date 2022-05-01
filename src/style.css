@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    font-family: Inter, sans-serif;
+    color: #2B283A;
+}
+
+nav {
+    background-color: #F55A5A;
+    height: 55px;
+    color: #FFFFFF;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar--title { 
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.cardlist {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cardlist hr {
+    height: 1px;
+    background-color: #C4C4C4;
+    border: none;
+    margin: 0;
+}
+
+.card {
+    height: 325px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.card--image {
+    height: 100%;
+    width: 488px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 21px 1px rgba(0, 0, 0, 0.61);
+}
+
+.cardinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cardinfo--location {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.cardinfo--location span {
+    letter-spacing: .25em;
+    text-transform: capitalize;
+}
+
+.cardinfo--location i {
+    color: #F55A5A;
+}
+
+.cardinfo--location a {
+    margin-left: 12px;
+    color: #918E9B;
+    border-color: #918E9B;
+}
+
+.cardinfo--maintext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cardinfo--maintext--date {
+    font-weight: 700;
+}
+
+@media screen and (max-width:990px) {
+    .cardlist {
+        flex-wrap: wrap;
+    }
+}
